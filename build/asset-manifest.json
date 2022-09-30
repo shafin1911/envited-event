@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/melodious-arithmetic-20f55c.netlify.app/static/css/main.31b586f3.css",
+    "main.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/main.7cff55cf.js",
+    "static/js/372.f1a197ab.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/372.f1a197ab.chunk.js",
+    "static/js/800.8c520fae.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/800.8c520fae.chunk.js",
+    "static/js/586.61ed2074.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/586.61ed2074.chunk.js",
+    "static/js/953.3b3d7f50.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/953.3b3d7f50.chunk.js",
+    "static/js/827.df604435.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/827.df604435.chunk.js",
+    "static/js/963.59b787c8.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/963.59b787c8.chunk.js",
+    "static/js/494.ddb7c2ac.chunk.js": "/melodious-arithmetic-20f55c.netlify.app/static/js/494.ddb7c2ac.chunk.js",
+    "index.html": "/melodious-arithmetic-20f55c.netlify.app/index.html",
+    "main.31b586f3.css.map": "/melodious-arithmetic-20f55c.netlify.app/static/css/main.31b586f3.css.map",
+    "main.7cff55cf.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/main.7cff55cf.js.map",
+    "372.f1a197ab.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/372.f1a197ab.chunk.js.map",
+    "800.8c520fae.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/800.8c520fae.chunk.js.map",
+    "586.61ed2074.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/586.61ed2074.chunk.js.map",
+    "953.3b3d7f50.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/953.3b3d7f50.chunk.js.map",
+    "827.df604435.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/827.df604435.chunk.js.map",
+    "963.59b787c8.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/963.59b787c8.chunk.js.map",
+    "494.ddb7c2ac.chunk.js.map": "/melodious-arithmetic-20f55c.netlify.app/static/js/494.ddb7c2ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31b586f3.css",
+    "static/js/main.7cff55cf.js"
+  ]
+}
