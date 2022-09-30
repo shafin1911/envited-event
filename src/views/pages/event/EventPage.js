@@ -4,13 +4,24 @@ import { Grid } from "@mui/material"
 
 // project imports
 import { Box } from "@mui/system"
-import AnimateCustomButton from "ui-component/extended/AnimateCustomButton"
-import { useNavigate } from "react-router"
+import { ImCalendar, ImLocation2 } from "react-icons/im"
 
 const styles = {
-  bodyWrapper: { marginTop: "60px" },
+  bodyWrapper: { px: { xs: 0, sm: "184px" }, py: { xs: 0, sm: "88px" } },
+  contentWrapper: { px: { xs: "20px", sm: 0 }, py: { xs: "11px", sm: "36px" } },
+  topImage: {
+    "& img": {
+      // maxWidth: { xs: "165px", md: "311px" },
+      width: "100%",
+      height: "auto",
+    },
+    display: "flex",
+    justifyContent: "center",
+    filter: `drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05))`,
+    borderRadius: "13.2326px",
+  },
   headerTitleWrapper: {
-    textAlign: "center",
+    textAlign: "left",
     fontStyle: "normal",
     fontWeight: 700,
     fontSize: { xs: "36px", md: "64px" },
@@ -23,61 +34,81 @@ const styles = {
     lineHeight: { xs: "16px", md: "24px" },
     marginTop: "16px",
     color: "#4F4F4F",
-    textAlign: "center",
-    paddingX: "27px",
+    textAlign: "left",
   },
-  gradientHeadertext: {
-    background: `linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%)`,
-    backgroundClip: "text",
-    textFillColor: "transparent",
+  eventDetailsWrapper: {
+    my: "32px",
   },
-  midImage: {
-    "& img": {
-      maxWidth: { xs: "165px", md: "311px" },
-      height: "auto",
-    },
-    paddingY: "36px",
+  eventDetails: {
     display: "flex",
-    justifyContent: "center",
-    filter: `drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05))`,
-    borderRadius: "13.2326px",
+    textAlign: "left",
+    width: "100%",
+    mb: "16px",
   },
-  bottomButton: {
-    width: { xs: "180px", md: "311px" },
-    marginBottom: "24px",
+  eventDetailsIcon: {
+    mr: "20px",
+    background: "white",
+    width: "48px",
+    height: "48px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "primary.light",
+    fontSize: "20px",
+    borderRadius: "16px",
+  },
+  eventDetailsTextTitle: {
+    fontSize: "16px",
+    fontWeight: 700,
+  },
+  eventDetailsTextData: {
+    fontSize: "14px",
+    fontWeight: 400,
   },
 }
 
 export default function EventPage() {
-  const navigate = useNavigate()
   return (
-    <Grid container sx={styles.bodyWrapper}>
-      <Grid item xs={12}>
-        <Box sx={styles.headerTitleWrapper}>
-          <Box>Imagine if</Box>
-          <Box sx={styles.gradientHeadertext}>Snapchat</Box>
-          <Box>had events.</Box>
-        </Box>
-        <Box sx={styles.headerSubtitleWrapper}>
-          Easily host and share events with your friends across any social
-          media.
-        </Box>
+    <Box sx={styles.bodyWrapper}>
+      <Box sx={styles.topImage}>
+        <img src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/17d6299f-f287-469c-a403-b8ab9d75aa62/Birthday_cake.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220930%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220930T123153Z&X-Amz-Expires=86400&X-Amz-Signature=8b9568146a0e556985e29a6a2b80a9496b06f0c3ec139323e1f3748328bfebbf&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Birthday%2520cake.png%22&x-id=GetObject' />
+      </Box>
+      <Grid container sx={styles.contentWrapper}>
+        <Grid item xs={12}>
+          <Box sx={styles.headerTitleWrapper}>
+            <Box>Birthday Bash</Box>
+          </Box>
+          <Box sx={styles.headerSubtitleWrapper}>Hosted by Elysia</Box>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Box sx={styles.eventDetailsWrapper}>
+            <Box sx={styles.eventDetails}>
+              <Box sx={styles.eventDetailsIcon}>
+                <ImCalendar />
+              </Box>
+              <Box sx={styles.eventDetailsText}>
+                <Box sx={styles.eventDetailsTextTitle}>18 August 6:00PM</Box>
+                <Box sx={styles.eventDetailsTextData}>
+                  to 19 August 1:00PM UTC +10
+                </Box>
+              </Box>
+            </Box>
+
+            <Box sx={styles.eventDetails}>
+              <Box sx={styles.eventDetailsIcon}>
+                <ImLocation2 />
+              </Box>
+              <Box sx={styles.eventDetailsText}>
+                <Box sx={styles.eventDetailsTextTitle}>Street name</Box>
+                <Box sx={styles.eventDetailsTextData}>
+                  Suburb, State, Postcode
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Grid>
       </Grid>
-      <Grid item xs={12}>
-        <Box sx={styles.midImage}>
-          <img src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ea95af2d-7f06-4f25-859c-9069519053a7/Landing_page_image.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220930%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220930T103200Z&X-Amz-Expires=86400&X-Amz-Signature=54bace6c3d2e78e28cb9953deedb9e2c7a249a244a109e33bd689abc8d7ae8cc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Landing%2520page%2520image.svg%22&x-id=GetObject' />
-        </Box>
-      </Grid>
-      <Grid item xs={12} display='flex' justifyContent='center'>
-        <Box sx={styles.bottomButton}>
-          <AnimateCustomButton
-            label={"🎉 Create my event"}
-            onClick={() => {
-              navigate("/create")
-            }}
-          />
-        </Box>
-      </Grid>
-    </Grid>
+    </Box>
   )
 }

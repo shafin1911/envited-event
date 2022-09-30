@@ -15,7 +15,7 @@ const styles = {
     fontWeight: 700,
     fontSize: { xs: "36px", md: "64px" },
     lineHeight: { xs: "36px", md: "64px" },
-    color: "#240D57",
+    color: "primary.dark",
   },
   headerSubtitleWrapper: {
     fontWeight: 300,
