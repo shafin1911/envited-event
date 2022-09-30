@@ -2,7 +2,7 @@
   "name": "envited",
   "version": "1.0.1",
   "private": true,
-  "homepage": "melodious-arithmetic-20f55c.netlify.app",
+  "homepage": "/",
   "dependencies": {
     "@babel/helper-define-map": "^7.16.7",
     "@emotion/cache": "^11.4.0",
