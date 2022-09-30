@@ -1,0 +1,27 @@
+// action - customization reducer
+export const SET_MENU = "@customization/SET_MENU";
+export const MENU_TOGGLE = "@customization/MENU_TOGGLE";
+export const MENU_OPEN = "@customization/MENU_OPEN";
+export const SET_FONT_FAMILY = "@customization/SET_FONT_FAMILY";
+export const SET_BORDER_RADIUS = "@customization/SET_BORDER_RADIUS";
+export const SET_SNACKBAR = "@customization/SET_SNACKBAR";
+export const RESET_SNACKBAR = "@customization/RESET_SNACKBAR";
+export const SET_MODAL = "@customization/SET_MODAL";
+export const RESET_MODAL = "@customization/RESET_MODAL";
+
+// action - user reducer
+export const RESET_USER_STORE = "@user/RESET_USER_STORE";
+export const GET_ALL_USER = "@user/GET_ALL_USER";
+export const GET_SUBSCRIBED_COURSES = "@user/GET_SUBSCRIBED_COURSES";
+export const UPDATE_SUBSCRIBED_USER = "@user/UPDATE_SUBSCRIBED_USER";
+export const ADD_NEW_SUBSCRIBED_USER = "@user/ADD_NEW_SUBSCRIBED_USER";
+export const GET_OPEN_COURSES = "@user/GET_OPEN_COURSES";
+export const GET_PAYMENT_URL = "@user/GET_PAYMENT_URL";
+export const GET_USER_PROFILE = "@user/GET_USER_PROFILE";
+export const UPDATE_USER_PROFILE = "@user/UPDATE_USER_PROFILE";
+export const GET_USER_VIDEOS = "@user/GET_USER_VIDEOS";
+export const GET_USER_PDFS = "@user/GET_USER_PDFS";
+export const GET_USER_MEETINGS = "@user/GET_USER_MEETINGS";
+export const GET_USER_MEETING_LINK = "@user/GET_USER_MEETING_LINK";
+export const REGISTRATION_REQUIRE_CHECK = "@user/REGISTRATION_REQUIRE_CHECK";
+export const EXPORT_SUBSCRIBED_USER_LIST = "@user/EXPORT_SUBSCRIBED_USER_LIST";
