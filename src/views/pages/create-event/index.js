@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import { Box } from "@mui/material"
 import Loader from "ui-component/Loader"
-import LandingPage from "./LandingPage"
+import CreateEventPage from "./CreateEventPage"
 
 // ==============================|| Landing Page ||============================== //
 
-const LandingPageRoot = () => {
+const CreateEventPageRoot = () => {
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -18,9 +18,9 @@ const LandingPageRoot = () => {
 
   return (
     <Box>
-      <LandingPage />
+      <CreateEventPage />
     </Box>
   )
 }
 
-export default LandingPageRoot
+export default CreateEventPageRoot

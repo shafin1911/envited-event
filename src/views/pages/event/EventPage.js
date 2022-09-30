@@ -48,7 +48,7 @@ const styles = {
   },
 }
 
-export default function LandingPage() {
+export default function EventPage() {
   const navigate = useNavigate()
   return (
     <Grid container sx={styles.bodyWrapper}>

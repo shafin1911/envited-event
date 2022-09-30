@@ -15,6 +15,7 @@
     "@mui/system": "^5.0.3",
     "@mui/utils": "^5.0.1",
     "@mui/x-data-grid": "^5.0.0-beta.3",
+    "@mui/x-date-pickers": "^5.0.3",
     "@tabler/icons": "^1.39.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -37,6 +38,7 @@
     "react-scripts": "^5.0.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.4.1",
+    "use-file-upload": "^1.0.11",
     "yup": "^0.32.9"
   },
   "scripts": {

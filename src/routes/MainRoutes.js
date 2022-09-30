@@ -1,12 +1,14 @@
-import { lazy } from "react";
+import { lazy } from "react"
 
 // project imports
-import MainLayout from "layout/MainLayout";
-import Loadable from "ui-component/Loadable";
-import NotFoundPage from "ui-component/utils/NotFoundPage";
+import MainLayout from "layout/MainLayout"
+import Loadable from "ui-component/Loadable"
+import NotFoundPage from "ui-component/utils/NotFoundPage"
 
 // user routing
-const UserDashboard = Loadable(lazy(() => import("views/pages/home")));
+const LandingPage = Loadable(lazy(() => import("views/pages/home")))
+const CreateEventPage = Loadable(lazy(() => import("views/pages/create-event")))
+const EventPage = Loadable(lazy(() => import("views/pages/event")))
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -17,14 +19,22 @@ const MainRoutes = () => {
     children: [
       {
         path: "/",
-        element: <UserDashboard />,
+        element: <LandingPage />,
+      },
+      {
+        path: "/create",
+        element: <CreateEventPage />,
+      },
+      {
+        path: "/event",
+        element: <EventPage />,
       },
       {
         path: "/*",
         element: <NotFoundPage label='404 - Page Not Found!' />,
       },
     ],
-  };
-};
+  }
+}
 
-export default MainRoutes;
+export default MainRoutes

@@ -2,11 +2,12 @@ import { Button } from "@mui/material"
 import React from "react"
 import AnimateButton from "./AnimateButton"
 
-export default function AnimateCustomButton({ label, onClick }) {
+export default function AnimateCustomButton({ label, onClick, type }) {
   return (
-    <AnimateButton>
+    <AnimateButton style={{ width: "100%" }}>
       <Button
         fullWidth
+        type={type}
         size='large'
         variant='contained'
         color='primary'
@@ -17,7 +18,6 @@ export default function AnimateCustomButton({ label, onClick }) {
             justifyContent: "center",
             alignItems: "center",
             padding: "16px",
-            width: "fit-content",
             background: "linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%)",
             borderRadius: "10px",
             fontStyle: "normal",
