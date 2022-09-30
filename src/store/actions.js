@@ -9,6 +9,11 @@ export const RESET_SNACKBAR = "@customization/RESET_SNACKBAR";
 export const SET_MODAL = "@customization/SET_MODAL";
 export const RESET_MODAL = "@customization/RESET_MODAL";
 
+// action - settings reducer
+export const RESET_SETTINGS_STORE = "@settings/RESET_SETTINGS_STORE";
+export const GET_SETTINGS_INFO = "@settings/GET_SETTINGS_INFO";
+export const UPDATE_SETTINGS_INFO = "@settings/UPDATE_SETTINGS_INFO";
+
 // action - user reducer
 export const RESET_USER_STORE = "@user/RESET_USER_STORE";
 export const GET_ALL_USER = "@user/GET_ALL_USER";
